@@ -12,7 +12,9 @@ AClass::AClass( AClass& c ) {
 
 AClass& AClass::operator=( AClass& c ) {
 	std::cout << "\x1B[2m[AClass Copy assignment operator called]\x1B[22m\n";
-	//...
+	if (this != &c) {
+		//...
+	}
 	return (*this);
 }
 
